@@ -1,0 +1,309 @@
+/* Estilos personalizados para el portafolio de 4rgs */
+
+/* Variables de color */
+:root {
+  --primary-green: #00ff41;
+  --dark-bg: #0d1117;
+  --darker-bg: #010409;
+  --border-color: #30363d;
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --accent-blue: #58a6ff;
+}
+
+/* Mejoras para el contenido principal */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Estilos para las tarjetas de proyecto */
+.project-card {
+  background: var(--darker-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-green);
+  box-shadow: 0 4px 12px rgba(0, 255, 65, 0.1);
+}
+
+.project-title {
+  color: var(--primary-green);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  background: rgba(0, 255, 65, 0.1);
+  color: var(--primary-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(0, 255, 65, 0.2);
+}
+
+/* Tabla de stack técnico */
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.tech-table th,
+.tech-table td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.tech-table th {
+  background: var(--darker-bg);
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+.tech-table td {
+  background: rgba(13, 17, 23, 0.5);
+}
+
+/* Estilos para código */
+.highlight {
+  background: var(--darker-bg) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.highlighter-rouge .highlight {
+  background: var(--darker-bg) !important;
+}
+
+/* Estilos para enlaces */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-green);
+  text-decoration: underline;
+}
+
+/* Botones y enlaces destacados */
+.btn-primary {
+  background: var(--primary-green);
+  color: var(--dark-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #00cc35;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 255, 65, 0.3);
+}
+
+/* Estilos para listas */
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li::marker {
+  color: var(--primary-green);
+}
+
+/* Headers con mejor espaciado */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+h1 {
+  border-bottom: 2px solid var(--primary-green);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3rem;
+}
+
+/* Separadores */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-green),
+    transparent
+  );
+  margin: 2rem 0;
+}
+
+/* Estilos para badges y estadísticas */
+.stats-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  background: var(--darker-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  color: var(--primary-green);
+  font-weight: bold;
+  display: block;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Navegación de proyectos */
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: var(--darker-bg);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.nav-link {
+  color: var(--accent-blue) !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--primary-green) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .tech-stack {
+    flex-direction: column;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+  }
+  
+  .project-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Animaciones sutiles */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Mejoras para tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+table th,
+table td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table th {
+  background: var(--darker-bg);
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background: rgba(13, 17, 23, 0.3);
+}
+
+/* Footer y contacto */
+.contact-section {
+  background: var(--darker-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-link {
+  color: var(--accent-blue);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  color: var(--primary-green);
+}

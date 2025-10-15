@@ -1,12 +1,5 @@
-title: Álvaro González - Full Stack Developer & Makertitle: 4rGs
-
-description: >-description: Blog de Desarrollo
-
-  Portafolio de desarrollador Full-Stack chileno especializado en hardware libre, show_downloads: true
-
-  automatización y desarrollo creativo. Proyectos en Python, JavaScript, Lua y hardware embebido.google_analytics: true
-
-theme: jekyll-theme-hacker
+title: "Álvaro González - Full Stack Developer & Maker"
+description: "Portafolio de desarrollador Full-Stack chileno especializado en hardware libre, automatización y desarrollo creativo. Proyectos en Python, JavaScript, Lua y hardware embebido."
 
 url: "https://4rgs.github.io"
 baseurl: ""
@@ -19,36 +12,36 @@ kramdown:
   syntax_highlighter_opts:
     css_class: 'highlight'
 
-# Theme
-theme: jekyll-theme-hacker
+# Theme - Usando remote_theme para GitHub Pages
+remote_theme: pages-themes/hacker@v0.2.0
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # SEO settings
 author: "Álvaro González"
-twitter_username: "4rgs"
 github_username: "4rgs"
 
 # Social links
-social_links:
-  - platform: github
-    user_url: "https://github.com/4rgs"
-  - platform: email  
-    user_url: "mailto:alvaro.gonzalez.dev@gmail.com"
+social:
+  name: "Álvaro González"
+  links:
+    - "https://github.com/4rgs"
+    - "mailto:alvaro.gonzalez.dev@gmail.com"
 
 # Site settings
 show_excerpts: true
-show_frame: true
+show_downloads: false
 
 # Collections
 collections:
   projects:
     output: true
-    permalink: /:collection/:name/
+    permalink: /projects/:name/
 
 # Default layouts
 defaults:
@@ -62,6 +55,11 @@ defaults:
       type: "projects"
     values:
       layout: "default"
+  - scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "default"
 
 # Exclude from processing
 exclude:
@@ -73,6 +71,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
+  - SETUP_GUIDE.md
 
 # Include in processing
 include:

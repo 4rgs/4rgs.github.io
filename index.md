@@ -4,8 +4,6 @@ title: Álvaro González - Full Stack Developer & Maker
 description: Portafolio de desarrollador Full-Stack chileno especializado en hardware libre, automatización y desarrollo creativo
 ---
 
-#### [🏠 Home](./) | [👨‍💻 Sobre mí](./about.html) | [📁 Proyectos](#-proyectos-destacados) | [📫 Contacto](#-contacto)
-
 # 👋 ¡Hola! Soy Álvaro González (4rgs)
 
 **🧠 Desarrollador Full-Stack, maker y entusiasta del hardware libre**  
@@ -29,7 +27,7 @@ description: Portafolio de desarrollador Full-Stack chileno especializado en har
 
 ---
 
-## 🚀 Proyectos Destacados
+## 🚀 Proyectos Destacados {#proyectos-destacados}
 
 ### 🧩 [SpidsZero / RPI2WZeroLAB](./projects/rpi2wzerolab.html)
 **Sistema embebido basado en Raspberry Pi Zero 2 W**
@@ -120,7 +118,7 @@ Bot escrito en PureBasic para experimentos de automatización y respuesta de com
 
 ---
 
-## 📫 Contacto
+## 📫 Contacto {#contacto}
 
 - **✉️ Email:** [alvaro.gonzalez.dev@gmail.com](mailto:alvaro.gonzalez.dev@gmail.com)
 - **🌐 GitHub:** [github.com/4rgs](https://github.com/4rgs)
