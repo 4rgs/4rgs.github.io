@@ -4,7 +4,15 @@ title: Sobre mí - Álvaro González
 description: Conoce más sobre Álvaro González, desarrollador Full-Stack chileno especializado en hardware libre y automatización
 ---
 
-# 👨‍💻 Sobre mí
+<div class="site-nav">
+  <a href="./">🏠 Home</a>
+  <a href="#quien-soy">👨‍💻 Sobre mí</a>
+  <a href="./#proyectos-destacados">📁 Proyectos</a>
+  <a href="./#contacto">📫 Contacto</a>
+  <a href="https://github.com/4rgs" target="_blank">🐙 GitHub</a>
+</div>
+
+# 👨‍💻 Sobre mí {#quien-soy}
 
 [← Volver al portafolio](../)
 

@@ -4,7 +4,15 @@ title: Álvaro González - Full Stack Developer & Maker
 description: Portafolio de desarrollador Full-Stack chileno especializado en hardware libre, automatización y desarrollo creativo
 ---
 
-# 👋 ¡Hola! Soy Álvaro González (4rgs)
+<div class="site-nav">
+  <a href="#inicio">🏠 Home</a>
+  <a href="./about.html">👨‍💻 Sobre mí</a>
+  <a href="#proyectos-destacados">📁 Proyectos</a>
+  <a href="#contacto">📫 Contacto</a>
+  <a href="https://github.com/4rgs" target="_blank">🐙 GitHub</a>
+</div>
+
+# 👋 ¡Hola! Soy Álvaro González (4rgs) {#inicio}
 
 **🧠 Desarrollador Full-Stack, maker y entusiasta del hardware libre**  
 **🎮 Apasionado por la automatización, la emulación de dispositivos y el desarrollo de addons**  

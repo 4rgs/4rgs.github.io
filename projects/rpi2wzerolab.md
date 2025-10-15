@@ -4,6 +4,14 @@ title: SpidsZero / RPI2WZeroLAB - Álvaro González
 description: Sistema embebido basado en Raspberry Pi Zero 2 W con pantalla e-ink y Bluetooth
 ---
 
+<div class="site-nav">
+  <a href="../">🏠 Home</a>
+  <a href="../about.html">👨‍💻 Sobre mí</a>
+  <a href="../#proyectos-destacados">📁 Proyectos</a>
+  <a href="../#contacto">📫 Contacto</a>
+  <a href="https://github.com/4rgs" target="_blank">🐙 GitHub</a>
+</div>
+
 # 🧩 SpidsZero / RPI2WZeroLAB
 
 [← Volver al portafolio](../)
