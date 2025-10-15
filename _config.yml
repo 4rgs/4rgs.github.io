@@ -1,0 +1,79 @@
+title: Álvaro González - Full Stack Developer & Makertitle: 4rGs
+
+description: >-description: Blog de Desarrollo
+
+  Portafolio de desarrollador Full-Stack chileno especializado en hardware libre, show_downloads: true
+
+  automatización y desarrollo creativo. Proyectos en Python, JavaScript, Lua y hardware embebido.google_analytics: true
+
+theme: jekyll-theme-hacker
+
+url: "https://4rgs.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Theme
+theme: jekyll-theme-hacker
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author: "Álvaro González"
+twitter_username: "4rgs"
+github_username: "4rgs"
+
+# Social links
+social_links:
+  - platform: github
+    user_url: "https://github.com/4rgs"
+  - platform: email  
+    user_url: "mailto:alvaro.gonzalez.dev@gmail.com"
+
+# Site settings
+show_excerpts: true
+show_frame: true
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include in processing
+include:
+  - _pages
